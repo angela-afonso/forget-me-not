@@ -22,7 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard/cuidador" element={<Dashboard />} />
-          <Route path="/dashboard/paciente" element={<PatientDashboard />} />
+          <Route path="/dashboard/familiar" element={<PatientDashboard />} />
           <Route path="/cadastrar-paciente" element={<RegisterPatient />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
