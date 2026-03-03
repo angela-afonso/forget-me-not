@@ -27,23 +27,35 @@ const Auth = () => {
 
   return (
     <div className="flex min-h-screen">
-      {/* Left side - Image */}
-      
+      {/* Left side - Image */} 
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
+        {/* IMAGEM COMO FUNDO */}
+        <img
+          src={authBg}
+          alt="Não Me Esqueças"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* OVERLAY 1 */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
-        <img src={authBg} alt="Não Me Esqueças" className="object-cover w-full h-full" />
-        <div className="absolute inset-0 gradient-primary opacity-40" />
-          <div className="rounded-2xl bg-purple-100/90 border border-purple-200 px-6 py-4 shadow-md">
-            <h1 className="text-2xl lg:text-3xl font-bold text-primary-foreground mb-2">Não Me Esqueças</h1>
-            <p className="text-lg text-primary-foreground/80">Instituto de Apoio • Londrina, PR
-
+        {/* OVERLAY 2 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-indigo-600/30" />
+              {/* PAINEL */}
+        <div className="absolute bottom-12 left-12 z-10">
+          <div className="rounded-2xl bg-white/40 backdrop-blur-md border border-white/30 px-8 py-6 shadow-xl">
+            <h1 className="text-2xl lg:text-3xl font-bold text-purple-900 mb-2">
+              Não Me Esqueças
+            </h1>
+            <p className="text-lg text-slate-700">
+              Instituto de Apoio • Londrina, PR
             </p>
-            <p className="text-primary-foreground/60 mt-4 max-w-md">Cuidando com amor e dedicação das nossas vidas, para que nenhum momento seja esquecido.
-
+            <p className="text-slate-600 mt-4 max-w-md">
+              Cuidando com amor e dedicação das nossas vidas,
+              para que nenhum momento seja esquecido.
             </p>
           </div>
         </div>
-      
+    </div>
+          
 
       {/* Right side - Form */}
       
